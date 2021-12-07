@@ -1,5 +1,6 @@
-% Signals Demonstration
-% author: RJ Macaranas
+% signals.m
+%   Signals demonstration
+%   author: RJ Macaranas
 
 %% Get time values
 Fs = 44.1e3; % sampling frequency (Hz)
@@ -10,9 +11,7 @@ tstep = 1/Fs; % sample time (s)
 % time values from tstart to tstop in tstep increments
 t = tstart: tstep: tstop;
 
-%% Familiar Signals
-
-% 1. sine wave, x(t) = sin(2πft) = sin(omega * t)
+% sine wave, x(t) = sin(2πft) = sin(omega * t)
 f = 1; % frequency of sine wave (Hz)
 x = sin(2*pi*f*t); 
 
@@ -37,7 +36,3 @@ for dt = 0: 0.1*tshift: tshift
     plot(t, x); title("x(t) = sin(2πf (t - dt)"); xlim([-1 2])
     xlabel("t (s)"); ylabel("x(t)"); pause(1);
 end
-
-
-
-
