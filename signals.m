@@ -24,7 +24,7 @@ saveas(fig, "signals_1.png")
 
 % discrete-time (DT) we can use stem
 fig = stem(t, x); title("x[n] = sin(2\pi fn)"); 
-xlim([-1 2]); xlabel("n"); ylabel("x[n]"); 
+xlim([-1 2]); xlabel("n"); ylabel("x[n]"); hold on;
 pause(5);
 saveas(fig, "signals_2.png")
 
